@@ -911,7 +911,7 @@
 }
 
 .category__heading {
-    margin-top: 0;
+    margin: 0;
     font-size: 1.6rem;
     color: var(--text-color);
     padding: 12px 16px;
@@ -957,7 +957,7 @@
     text-decoration: none;
     font-size: 1.6rem;
     color: var(--text-color);
-    padding: 6px 16px;
+    padding: 10px 16px;
     transition: right linear 0.1s;
     right: 0;
 }
@@ -1249,4 +1249,119 @@ i.home-product-item__like-icon-fill {
     line-height: 1.3rem;
     font-weight: 500;
     color: var(--white-color)
+}
+
+.home-product_pagination {
+    margin: 48px 32px;
+}
+
+/* Footer */
+
+.footer {
+    border-top: 5px solid #ee4d2d;
+    /* background-color: #e7e7e7; */
+    background-color: var(--white-color);
+}
+
+.footer__heading {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+.footer-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-item {
+
+}
+
+.footer-item__link {
+    text-decoration: none;
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 1.2rem;
+    padding: 8px 0;
+    display: block;
+}
+
+.footer-item__link:hover {
+    color: #ee4d2d;
+}
+
+.footer__pay {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__pay-img {
+    width: 55px;
+    height: 18px;
+    margin: 8px 10px 8px 0;
+}
+
+.footer__deliver {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__deliver-img {
+    width: 55px;
+    height: 18px;
+    margin: 8px 10px 8px 0;
+}
+
+.footer-item__follow i {
+    margin-right: 8px;
+    margin-left: 3px;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    position: relative;
+    top: 7px;
+}
+
+.footer-item__follow {
+    display: flex;
+}
+
+.footer__download {
+    display: flex; 
+    align-items: center;
+}
+
+.footer__dowload-qr {
+    width: 85px;
+    height: 85px;
+}
+
+.footer__download-apps {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    justify-content: center;
+}
+
+.footer__download-app-img {
+    width: 85px;
+    height: 25px;
+}
+
+.footer__download-apps-link {
+    text-decoration: none;
+    color: transparent;
+}
+
+.footer__bottom {
+    padding: 16px 0;
+    background-color: #f5f5f5;
+}
+
+.footer_bottom-text {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #737373;
 }
