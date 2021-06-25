@@ -1,0 +1,232 @@
+.support {
+    
+}
+
+.support__header {
+    margin: 10px 50px;
+    display: flex;
+}
+
+.support__header-logo-img {
+    width: 106px;
+}
+
+.support__header-heading {
+    font-size: 2rem;
+    color: #ee4e2c;
+    font-weight: 700;
+    margin: 13px 8px;
+    border-left: 3px solid #f98f79;
+    padding: 1px 8px;
+}
+
+.support__sub-header {
+    top: 100%;
+    height: 370px;
+    background-color: #f64f24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.support__sub-header__content {
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.support__sub-header__title {
+    color: var(--white-color);
+    font-size: 5.4rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+
+.support__sub-header__search-input {
+    width: 100%;
+    height: 60px;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    margin-top: 64px;
+    border-radius: 2px;
+}
+
+.support__content {
+    display: flex;
+    margin: 40px 50px;
+}
+
+.support__category {
+    width: 30%;
+    margin-right: 30px;
+    
+}
+
+.support__category-heading {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin: 0 0 12px; 
+}
+
+.support__category-list {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.support__category-item {
+    padding: 12px 0;
+    border-right: 1px solid #eee;
+}
+
+.support__category-link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+.support__category-link:hover {
+    color: var(--primary-color);
+}
+
+.support__questions {
+    width: 70%;
+    margin-left: 10px;
+}
+
+.support__question-heading {
+    font-size: 2.4rem;
+    color: var(--text-color);
+    margin: 0 0 16px; 
+}
+
+.support__question-list {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.support__question-item {
+    padding: 25px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.support__question-link {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+.support__question-link:hover {
+    color: var(--primary-color);
+}
+
+.support__question-btn-load-more {
+    display: flex;
+    margin: auto;
+    margin-top: 12px;
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    border-radius: 4px;
+    border: none; 
+    background-color: #aea7a7;
+    cursor: pointer;
+}
+
+.support__question-btn-load-more:hover {
+    background-color: #9b9797;
+}
+
+
+.support__chat-heading {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin: 54px 0 24px;
+}
+
+.support__chat-info {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.support__chat-info__detail {
+    border: 1px solid #ddd;
+    padding: 10px 6px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.support__chat-info a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.support__chat-info__detail-icon {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.support__chat-info__detail-msg {
+    padding-right: 50px;
+}
+
+.support__chat-info__detail-msg h2 {
+    font-weight: 100;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+
+/* Footer */
+
+.support__footer {
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0 40px;
+    border-top: 1px solid #eee;
+}
+
+.support__footer__left {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 54px;
+}
+
+.support__footer__right {
+    display: flex;
+    align-items: center;
+}
+
+.support__footer__right-policy {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    padding: 0 8px;
+    border-right: 1px solid #bbb;
+    display: block;
+    height: 16px;
+}
+
+.support__footer__right-policy:hover {
+    text-decoration: underline;
+}
+
+.support__footer__right-socials {
+    font-size: 3rem;
+    margin: 0 12px;
+    color: var(--text-color);
+}
+
