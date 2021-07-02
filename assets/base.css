@@ -5,6 +5,9 @@
     --text-color: #333;
     --tex-border-color: #dbdbdb;
     --star-gold-color: #fad35f;
+    --border-color: #e1e1e1;
+
+    --header-sort-bar-height: 46px;
 
     --header-height: 120px;
     --navbar-height: 30px;
@@ -23,16 +26,6 @@ html {
 }
 
 /* Responsive */
-
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__full-width {
-    width: 100%; 
-}
 
 .grid__row {
     display: flex;
@@ -218,7 +211,8 @@ html {
     align-items: center;
     justify-content: center;
     list-style: none;
-    padding: 0;
+    /* padding: 0; */
+    margin: 0
 }
 
 .pagination-item {
