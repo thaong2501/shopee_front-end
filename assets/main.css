@@ -233,7 +233,7 @@
     /* Nav - Notifications */
 
 .navbar__noti {
-    z-index: 1;
+    z-index: 10;
     position:absolute;
     top: 100%;
     right: 0;
@@ -1505,6 +1505,7 @@ i.home-product-item__like-icon-fill {
 
 .footer__top {
     background-color: #fbfbfb;
+    padding-top: 40px;
 }
 
 .footer__heading {
@@ -1512,7 +1513,7 @@ i.home-product-item__like-icon-fill {
     color: var(--text-color);
     opacity: 0.8;
     text-transform: uppercase;
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 .footer-list {
@@ -1614,7 +1615,6 @@ i.home-product-item__like-icon-fill {
 }
 
 .grid__row--pd-40 {
-    padding: 40px 0;
     padding-bottom: 20px
 }
 

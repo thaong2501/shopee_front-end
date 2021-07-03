@@ -1,7 +1,7 @@
 /* Mobile & tablet */
 @media (max-width: 1023px) {
     .hide-on-mobile-tablet {
-        display: none;
+        display: none !important;
     }
     :root {
         --header-height: 68px;
@@ -12,6 +12,8 @@
         padding-top: 8px;
         display: block;
     }
+
+
 
     .header {
         position: fixed;
@@ -63,6 +65,52 @@
         width: 100%;
     }
 
+    .account__info__left {
+        padding: 0 26px !important;
+    }
+
+    .account__info__heading {
+        margin-top: 12px;
+    }
+
+    .account__menu__list {
+        position: absolute;
+        top: 122px;
+        background-color: var(--white-color);
+        padding-left: 12px !important;
+        box-shadow: 0 1px 2px 0 rgb(0 0 0 / 13%);
+        z-index: 10;
+        border-radius: 2px;
+        min-width: 200px;
+        display: none;
+    }
+    
+    .account__menu__item-link {
+        padding: 13px 0;
+        margin: 0 !important;
+    }
+
+    #account-menu-check:checked ~  .account__menu__list {
+        display: block;
+    }
+
+    .account-menu-check-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+    }
+
+    #account-menu-check:checked ~  .account-menu-check-overlay {
+        display: block;
+    }
+
+    .account__info {
+        margin-bottom: 24px !important;
+    }
+
 }
 
 /* Tablet */
@@ -92,6 +140,8 @@
         width: 100%;
         margin: 0 20px;
     }
+
+    
 }
 
 /* Mobile */
@@ -149,6 +199,37 @@
         display: none;
     }
 
+    .account__info__heading {
+        padding: 18px !important;
+    }
+
+    .account__info__left-title {
+        text-align: left !important;
+        padding: 0 !important;
+    }
+
+    .account__info__left-input {
+        padding: 0 !important;
+        margin: 8px 0;
+    }
+
+    .mg-bot-30 {
+        margin-bottom: 16px !important;
+    }
+
+    .account__info__left-input select {
+        width: 106px !important;
+    }
+
+    .account__info__left-input-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .account__info__save-btn {
+        padding: 16px 54px !important;
+        font-size: 1.6rem !important;
+    }
     .tablet-mobile__account-menu::before {
         right: 11px;
     }
@@ -189,5 +270,22 @@
     .footer__middle_right {
         width: 100%;
         text-align: center;
+    }
+
+    .slide__img img{
+        width: 100% !important;
+    }
+
+    .account__menu__heading-edit,
+    .account__menu__item-link {
+        font-size: 1.3rem !important;
+    }
+
+    .account__info__right {
+        display: flex !important;
+    }
+
+    .account__info__left-input select {
+        width: 125px !important;
     }
 }

@@ -408,30 +408,17 @@
 
 
             </div>
-            <ul class="header__sort-bar">
-                <li class="header__sort-item">
-                    <a href="" class="header__sort-link">Liên quan</a>
-                </li>
-                <li class="header__sort-item header__sort-item--active">
-                    <a href="" class="header__sort-link">Mới nhất</a>
-                </li>
-                <li class="header__sort-item">
-                    <a href="" class="header__sort-link">Bán chạy</a>
-                </li>
-                <li class="header__sort-item">
-                    <a href="" class="header__sort-link">Giá</a>
-                </li>
-            </ul>
+            
         </header>
         <!-- End: Header -->
     
         <!-- Begin: Container -->
         <div class="container">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-2">
-                        <div class="account__menu">
-                            <div class="account__menu__heading">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2">
+                        <div class="account__menu ">
+                            <div class="account__menu__heading hide-on-mobile-tablet">
                                 <img src="../assets/img/avatar.jpg"class="account__menu__heading-avatar">
                                 <div class="account__menu__heading-right">
                                     <h2 class="account__menu__heading-name">thaocute</h2>
@@ -441,7 +428,12 @@
                                     </a>
                                 </div>
                             </div>
-                            <ul class="account__menu__list">
+
+                            <input type="checkbox" hidden id="account-menu-check">
+                            
+                            <label for="account-menu-check" class="account-menu-check-overlay"></label>
+                            
+                            <label for="account-menu-check" class="account__menu__list">
                                 <li class="account__menu__item">
                                     <a href="" class="account__menu__item-link">
                                         <i class="far fa-user" style="color: #2761BA;"></i>
@@ -484,67 +476,91 @@
                                         Shopii xu
                                     </a>
                                 </li>
-                            </ul>
+                            </label>
+                        
+
                         </div>
                     </div>
-    
-                    <div class="grid__column-10">
+
+                    <!-- Account menu on tablet and mobile -->
+                    <div class="col l-0 m-12 c-12 ">
+                        <div class="account__menu__tablet-mobile">
+                            <label for="account-menu-check" class="account__menu__tablet-mobile-list">
+                                <i class="account__menu__tablet-mobile-list-icon fas fa-bars"></i>
+                                
+                            </label>
+                            <div class="account__menu__tablet-mobile__user">
+                                <img src="../assets/img/avatar.jpg"class="account__menu__heading-avatar" style="width: 32px; height: 32px; margin: 0 12px; cursor: pointer;">
+                                <div class="account__menu__heading-right">
+                                    <h2 class="account__menu__heading-name" style="font-size: 1.3rem">thaocute</h2>
+                                    <a href="" class="account__menu__heading-edit" style="font-size: 1.2rem" >
+                                        <i class="fas fa-pen"></i>
+                                        Sửa hồ sơ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-10 m-12 c-12">
                         <div class="account__info">
                             <div class="account__info__heading">
                                 <h3>Hồ sơ của tôi</h3>
                                 <p>Quản lý thông tin hồ sơ để bảo mật tài khoản</p>
                             </div>
+                            
+
                             <!-- <div class="grid"> -->
-                                <div class="grid__row">
-                                    <div class="grid__column-7-12">
-                                        <div class="account__info__left">
-                                            <div class="grid__row mg-bot-30 account__info__left-row">
-                                                <div class="grid__column-2-12 account__info__left-title">
+                                <div class="grid">
+                                    <div class="row">
+                                        <div class="col l-8 m-12 c-12 account__info__left">
+                                            <div class="row mg-bot-30 account__info__left-row">
+                                                <div class="col l-3 m-3 c-12 account__info__left-title">
                                                     <span class="acc_info-text">Tên đăng nhập</span>
                                                 </div>
-                                                <div class="grid__column-8-12 account__info__left-input">
+                                                <div class="col l-9 m-9 c-12 account__info__left-input">
                                                     <span>thaocute</span>
                                                 </div>
                                             </div>
-                                            <div class="grid__row mg-bot-30 account__info__left-row">
-                                                <div class="grid__column-2-12 account__info__left-title">
+                                            <div class="row mg-bot-30 account__info__left-row">
+                                                <div class="col l-3 m-3 c-12 account__info__left-title">
                                                     <span class="acc_info-text">Tên</span>
                                                 </div>
-                                                <div class="grid__column-8-12 account__info__left-input">
+                                                <div class="col l-9 m-9 c-12 account__info__left-input">
                                                     <input type="text" class="account__info__name-input">
                                                 </div>
                                             </div>
-                                            <div class="grid__row mg-bot-30 account__info__left-row">
-                                                <div class="grid__column-2-12 account__info__left-title">
+                                            <div class="row mg-bot-30 account__info__left-row">
+                                                <div class="col l-3 m-3 c-12 account__info__left-title">
                                                     <span class="acc_info-text">Email</span>
                                                 </div>
-                                                <div class="grid__column-8-12 account__info__left-input">
+                                                <div class="col l-9 m-9 c-12 account__info__left-input">
                                                     <span>th********@gmail.com</span>
                                                 <a href="" class="account__info__edit">Thay đổi</a>
                                                 </div>
                                             </div>
-                                            <div class="grid__row mg-bot-30 account__info__left-row">
-                                                <div class="grid__column-2-12 account__info__left-title">
+                                            <div class="row mg-bot-30 account__info__left-row">
+                                                <div class="col l-3 m-3 c-12 account__info__left-title">
                                                     <span class="acc_info-text">Số điện thoại</span>
                                                 </div>
-                                                <div class="grid__column-8-12 account__info__left-input">
+                                                <div class="col l-9 m-9 c-12 account__info__left-input">
                                                     <span>********05</span>
                                                     <a href="" class="account__info__edit">Thay đổi</a>
                                                 </div>
                                             </div>
-                                            <div class="grid__row mg-bot-30 account__info__left-row">
-                                                <div class="grid__column-2-12 account__info__left-title">
+                                            <div class="row mg-bot-30 account__info__left-row">
+                                                <div class="col l-3 m-3 c-12 account__info__left-title">
                                                     <span class="acc_info-text">Tên shop</span>
                                                 </div>
-                                                <div class="grid__column-8-12 account__info__left-input">
+                                                <div class="col l-9 m-9 c-12 account__info__left-input">
                                                     <input type="text" class="account__info__shop-name-input" value="thaocute">
                                                 </div>
                                             </div>
-                                            <div class="grid__row mg-bot-30 account__info__left-row">
-                                                <div class="grid__column-2-12 account__info__left-title">
+                                            <div class="row mg-bot-30 account__info__left-row">
+                                                <div class="col l-3 m-3 c-12 account__info__left-title">
                                                     <span class="acc_info-text">Giới tính</span>
                                                 </div>
-                                                <div class="grid__column-8-12 account__info__left-input">
+                                                <div class="col l-9 m-9 c-12 account__info__left-input">
                                                     <input type="radio" name="sex" id="">
                                                     <label for="">Nam</label>
                                                     <input type="radio" name="sex" id="">
@@ -553,11 +569,11 @@
                                                     <label for="">Khác</label>
                                                 </div>
                                             </div>
-                                            <div class="grid__row mg-bot-30 account__info__left-row">
-                                                <div class="grid__column-2-12 account__info__left-title">
+                                            <div class="row mg-bot-30 account__info__left-row">
+                                                <div class="col l-3 m-3 c-12 account__info__left-title">
                                                     <span class="acc_info-text">Ngày sinh</span>
                                                 </div>
-                                                <div class="grid__column-8-12 account__info__left-input account__info__left-date-of-birth">
+                                                <div class="col l-9 m-9 c-12 account__info__left-input account__info__left-date-of-birth">
                                                     <select class="date-of-birth-" name="" id="">
                                                         <option value="">1</option>
                                                         <option value="">2</option>
@@ -621,25 +637,26 @@
                                                         
                                                     </select>
                                                 </div>
-                                                <div class="grid__column-2-12 account__info__left-title">
+                                                <div class="col l-3 m-3 c-12 account__info__left-title">
     
                                                 </div>
-                                                <div class="grid__column-8-12 account__info__left-input">
+                                                <div class="col l-9 m-9 c-12 account__info__left-input account__info__left-input-btn">
                                                     <button class="account__info__save-btn">Lưu</button>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-        
-                                    <div class="grid__column-3-12">
-                                        <div class="account__info__right">
-                                            <img src=".../assets/img/avatar.jpg" alt="" class="account__info__right-avatar">
+
+                                        
+                                        <div class="col l-4 account__info__right hide-on-mobile-tablet">
+                                            <img src="../assets/img/avatar.jpg" alt="" class="account__info__right-avatar">
                                             <button class="account__info__right__btn">Chọn Ảnh</button>
                                             <p>Dụng lượng file tối đa 1 MB <br>
                                                 Định dạng:.JPEG, .PNG
                                             </p>
                                         </div>
+                                        
                                     </div>
+        
         
                                     </div>
                                 </div>
@@ -654,7 +671,7 @@
         <!-- Begin: Footer -->
         <footer class="footer footer__top hide-on-mobile-tablet">
             <div class="grid wide ">
-                <div class="row grid__row--pd-40">
+                <div class="row row--pd-40">
                     <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
                         <ul class="footer-list">
@@ -805,7 +822,7 @@
         </footer>
         
         <!-- Footer on tablet and mobile -->
-        <div class="grid wide footer__tablet-mobile">
+        <footer class="grid wide footer__tablet-mobile">
             <div class="row footer__tablet-mobile__policy">
                 <div class="col m-6 c-6">Chính sách bảo mật</div>
                 <div class="col m-6 c-6">Quy chế hoạt động</div>
@@ -823,8 +840,9 @@
                 Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)<br>
                 Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015 <br>
                 © 2015 - Bản quyền thuộc về Công ty TNHH Shopii</p>
-        </div>
+        </footer>
         <!-- End: Footer -->
+
     </div>
 
 </body>
