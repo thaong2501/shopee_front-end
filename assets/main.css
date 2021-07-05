@@ -533,6 +533,7 @@
     height: 100%;
     display: block;
     line-height: 0;
+    outline: none;
 }
 
 .header__search {

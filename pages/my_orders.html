@@ -125,7 +125,7 @@
 
                         <li class="navbar__item">
                             <a href="" class="navbar__item__link navbar__item__link--strong">
-                                <a href="./pages/support.html" target=_blank class="navbar__item__icon-link">
+                                <a href="../pages/support.html" target=_blank class="navbar__item__icon-link">
                                     <i class="navbar-icon far fa-question-circle"></i>
                                     Hỗ trợ
                                 </a>
@@ -141,10 +141,10 @@
 
                             <ul class="navbar-user-menu">
                                 <li class="navbar-user-item">
-                                    <a href="../pages/my_account.html">Tài khoản của tôi</a>
+                                    <a href="./my_account.html">Tài khoản của tôi</a>
                                 </li>
                                 <li class="navbar-user-item">
-                                    <a href="../pages/my_orders.html">Đơn mua</a>
+                                    <a href="./my_orders.html">Đơn mua</a>
                                 </li>
                                 <li class="navbar-user-item navbar-user-item--separate">
                                     <a href="">Đăng xuất</a>
@@ -408,29 +408,16 @@
 
 
             </div>
-            <ul class="header__sort-bar">
-                <li class="header__sort-item">
-                    <a href="" class="header__sort-link">Liên quan</a>
-                </li>
-                <li class="header__sort-item header__sort-item--active">
-                    <a href="" class="header__sort-link">Mới nhất</a>
-                </li>
-                <li class="header__sort-item">
-                    <a href="" class="header__sort-link">Bán chạy</a>
-                </li>
-                <li class="header__sort-item">
-                    <a href="" class="header__sort-link">Giá</a>
-                </li>
-            </ul>
+
         </header>
         <!-- End: Header -->
     
         <!-- Begin: Container -->
-        <div class="container">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-2">
-                        <div class="account__menu">
+        <div class="container orders-page-container">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2">
+                        <div class="account__menu hide-on-orders-page">
                             <div class="account__menu__heading">
                                 <img src="../assets/img/avatar.jpg"class="account__menu__heading-avatar">
                                 <div class="account__menu__heading-right">
@@ -476,9 +463,9 @@
                         </div>
                     </div>
     
-                    <div class="grid__column-10">
+                    <div class="col l-10 m-12 c-12">
                         <div class="user-purchase">
-                            <div class="user-purchase__menu">
+                            <ul class="user-purchase__menu">
                                 <a href="" class="user-purchase__link user-purchase__link--active">
                                     <span>Tất Cả </span>
                                 <a href="" class="user-purchase__link">
@@ -498,7 +485,7 @@
                                 </a>
                             </div>
     
-                            <div class="user-purchase__search">
+                            <div class="user-purchase__search hide-on-mobile">
                                 <i class="user-purchase__search-icon fas fa-search"></i>
                                 <input type="text" class="user-purchase__search-input" placeholder="Tìm kiếm theo Tên Shop, ID đơn hàng hoặc Tên Sản Phẩm">
                             </div>
@@ -510,55 +497,59 @@
                                             <span class="order__header__shop-status shop--mall">Mall</span>
                                             <span class="order__header__shop-name">sony_official_store
                                                 </span>
-                                            <button class="btn-chat">
+                                            <button class="btn-chat hide-on-mobile">
                                                 <i class="fas fa-comment-alt"></i>
                                                 Chat
                                             </button>
-                                            <button class="btn-shop-visit">
+                                            <button class="btn-shop-visit hide-on-mobile">
                                                 <i class="fas fa-store"></i>
                                                 Xem Shop
                                             </button>
                                         </div>
                                         <div class="user-purchase__order__status order__status--success">
-                                            <div class="order__status--success-msg">
+                                            <div class="order__status--success-msg hide-on-orders-page">
                                                 <i class="fas fa-truck-moving"></i>
                                                 Giao hàng thành công
                                             </div>
-                                            <i class="far fa-question-circle"></i>
+                                            <i class="far fa-question-circle hide-on-orders-page"></i>
                                             <span class="order__status-done">ĐÃ GIAO</span>
                                         </div>
                                     </div>
-        
+
                                     <a href=""class="order__detail">
+                                        <img src="../assets/img/Products/Headphones/headphone1.jpg" alt="" class="order__detail-img">
                                         <div class="order__detail-info">
-                                            <img src="../assets/img/Products/Headphones/headphone1.jpg" alt="" class="order__detail-img">
-                                            <div class="order__detail-info-title">
-                                                <p class="order__detail__name">Lorem ipsum dolor</p>
-                                                <p class="order__detail__classify">Phân loại hàng: đen</p>
-                                                <p class="order__detail__quantity">x1</p>
+                                            <p class="order__detail__name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptates temporibus reprehenderit libero sequi repudiandae nulla esse </p>
+                                            <div class="order__detail__sub">
+                                                <div class="order__detail__left">
+                                                    <p class="order__detail__classify hide-on-mobile">Phân loại hàng: đen</p>
+                                                    <p class="order__detail__quantity">x1</p>
+                                                </div>
+                                                <div class="order__detail__price home-product-item__price">
+                                                    <div class="order__detail__price-old home-product-item__price-old">1.000.000đ</div>
+                                                    <div class="order__detail__price-current home-product-item__price-current">900.000đ</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="order__detail__price home-product-item__price">
-                                            <div class="order__detail__price-old home-product-item__price-old">1.000.000đ</div>
-                                            <div class="order__detail__price-current home-product-item__price-current">900.000đ</div>
                                         </div>
                                     </a>
         
                                     <a href=""class="order__detail">
+                                        <img src="../assets/img/Products/Headphones/headphone2.jpg" alt="" class="order__detail-img">
                                         <div class="order__detail-info">
-                                            <img src="../assets/img/Products/Headphones/headphone2.jpg" alt="" class="order__detail-img">
-                                            <div class="order__detail-info-title">
-                                                <p class="order__detail__name">Lorem ipsum dolor</p>
-                                                <p class="order__detail__classify">Phân loại hàng: hồng</p>
-                                                <p class="order__detail__quantity">x1</p>
+                                            <p class="order__detail__name">Lorem ipsum dolor sit amet</p>
+                                            <div class="order__detail__sub">
+                                                <div class="order__detail__left">
+                                                    <p class="order__detail__classify hide-on-mobile">Phân loại hàng: đen</p>
+                                                    <p class="order__detail__quantity">x1</p>
+                                                </div>
+                                                <div class="order__detail__price home-product-item__price">
+                                                    <div class="order__detail__price-old home-product-item__price-old">1.000.000đ</div>
+                                                    <div class="order__detail__price-current home-product-item__price-current">900.000đ</div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="order__detail__price home-product-item__price">
-                                            <div class="order__detail__price-old home-product-item__price-old">1.000.000đ</div>
-                                            <div class="order__detail__price-current home-product-item__price-current">900.000đ</div>
-                                        </div>
                                     </a>
-        
+                                    
                                 </div>
                                 <div class="order__detail__manipulation">
                                     <div class="order__detail-total">
@@ -566,90 +557,22 @@
                                         <span>Tổng số tiền: </span>
                                         <p class="order__detail-total-price">1.800.000đ</p>
                                     </div>
+                                    <div class="order__status--success-msg order__status--success-msg__on-mobile-tablet">
+                                        <i class="fas fa-truck-moving"></i>
+                                        Giao hàng thành công
+                                    </div>
                                     <div class="order__detail-bottom">
                                         <p>Không nhận được đánh giá</p>
                                         <div class="order__detail-bottom-btn">
                                             <button class="btn btn--primary">Mua lần nữa</button>
-                                            <button class="btn btn--normal mg-6" >Liên hệ người bán</button>
-                                            <button class="btn btn--normal">Xem đánh giá shop</button>
+                                            <button class="btn btn--normal mg-6 hide-on-mobile-tablet" >Liên hệ người bán</button>
+                                            <button class="btn btn--normal hide-on-mobile-tablet">Xem đánh giá shop</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
     
-                            <div class="user-purchase__order-wrap">
-                                <div class="user-purchase__order">
-                                    <div class="user-purchase__order__header">
-                                        <div class="order__header__shop">
-                                            <span class="order__header__shop-status shop--mall">Mall</span>
-                                            <span class="order__header__shop-name">sony_official_store
-                                                </span>
-                                            <button class="btn-chat">
-                                                <i class="fas fa-comment-alt"></i>
-                                                Chat
-                                            </button>
-                                            <button class="btn-shop-visit">
-                                                <i class="fas fa-store"></i>
-                                                Xem Shop
-                                            </button>
-                                        </div>
-                                        <div class="user-purchase__order__status order__status--success">
-                                            <div class="order__status--success-msg">
-                                                <i class="fas fa-truck-moving"></i>
-                                                Giao hàng thành công
-                                            </div>
-                                            <i class="far fa-question-circle"></i>
-                                            <span class="order__status-done">ĐÃ GIAO</span>
-                                        </div>
-                                    </div>
-        
-                                    <a href=""class="order__detail">
-                                        <div class="order__detail-info">
-                                            <img src="../assets/img/Products/Headphones/headphone1.jpg" alt="" class="order__detail-img">
-                                            <div class="order__detail-info-title">
-                                                <p class="order__detail__name">Lorem ipsum dolor</p>
-                                                <p class="order__detail__classify">Phân loại hàng: đen</p>
-                                                <p class="order__detail__quantity">x1</p>
-                                            </div>
-                                        </div>
-                                        <div class="order__detail__price home-product-item__price">
-                                            <div class="order__detail__price-old home-product-item__price-old">1.000.000đ</div>
-                                            <div class="order__detail__price-current home-product-item__price-current">900.000đ</div>
-                                        </div>
-                                    </a>
-        
-                                    <a href=""class="order__detail">
-                                        <div class="order__detail-info">
-                                            <img src="../assets/img/Products/Headphones/headphone2.jpg" alt="" class="order__detail-img">
-                                            <div class="order__detail-info-title">
-                                                <p class="order__detail__name">Lorem ipsum dolor</p>
-                                                <p class="order__detail__classify">Phân loại hàng: hồng</p>
-                                                <p class="order__detail__quantity">x1</p>
-                                            </div>
-                                        </div>
-                                        <div class="order__detail__price home-product-item__price">
-                                            <div class="order__detail__price-old home-product-item__price-old">1.000.000đ</div>
-                                            <div class="order__detail__price-current home-product-item__price-current">900.000đ</div>
-                                        </div>
-                                    </a>
-        
-                                </div>
-                                <div class="order__detail__manipulation">
-                                    <div class="order__detail-total">
-                                        <i class="order__detail-total__icon fab fa-stripe-s"></i>
-                                        <span>Tổng số tiền: </span>
-                                        <p class="order__detail-total-price">1.800.000đ</p>
-                                    </div>
-                                    <div class="order__detail-bottom">
-                                        <p>Không nhận được đánh giá</p>
-                                        <div class="order__detail-bottom-btn">
-                                            <button class="btn btn--primary">Mua lần nữa</button>
-                                            <button class="btn btn--normal mg-6" >Liên hệ người bán</button>
-                                            <button class="btn btn--normal">Xem đánh giá shop</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
